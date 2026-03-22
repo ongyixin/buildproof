@@ -1,0 +1,252 @@
+{
+  "description": "Hard edge-case gold-label benchmarks for BuildProof validator stress testing. Each case exercises a challenging scoring dimension: theoretical-only research, abandoned partial work, cross-disciplinary tension, extreme budgets, solo researchers, team conflicts, mandate mismatches, niche-but-deep work, and strong-plan-wrong-mandate.",
+  "proposals": [
+    {
+      "proposal_id": "gold_eh_001",
+      "title": "Theoretical Framework for Asynchronous Byzantine Consensus",
+      "category": "theoretical_no_prototype",
+      "difficulty": "hard",
+      "domain": "distributed-systems",
+      "proposal_text": "We propose a 10-month theoretical research program to develop a new asynchronous Byzantine fault-tolerant consensus protocol that provably achieves optimal communication complexity — O(n^2) messages per block — without requiring synchrony assumptions. This would resolve a 15-year open question in distributed systems theory. The researcher (PhD, distributed systems, Stanford) has 6 published papers, including a Best Paper Award at PODC 2022. No implementation is planned for this grant period; the deliverable is a formal proof and a companion survey paper. Budget: $28,000 for 10 months (personal stipend). This grant bridges a funding gap between two NSF proposals.",
+      "program_mandate": "Fund foundational research that improves the security and scalability of distributed systems.",
+      "reference_scores": {
+        "feasibility": 0.42,
+        "impact": 0.90,
+        "novelty": 0.95,
+        "budget_reasonableness": 0.75,
+        "clarity": 0.72,
+        "mandate_alignment": 0.88
+      },
+      "reference_questions": [
+        "What is the specific communication model (partial synchrony, eventual delivery) and does the claim apply under all models?",
+        "What is the relationship between this work and current lower bounds (Dolev-Reischuk, Omega-n-squared)?",
+        "Is the NSF gap real — have the NSF proposals been submitted and what is their status?",
+        "How will the proof be validated — will it be mechanized or peer-reviewed first?"
+      ],
+      "expected_flags": [],
+      "recommendation": "fund_with_conditions"
+    },
+    {
+      "proposal_id": "gold_eh_002",
+      "title": "Resuming Abandoned Open-Source Electronic Health Record Codebase",
+      "category": "partial_prototype_abandoned",
+      "difficulty": "hard",
+      "domain": "health",
+      "proposal_text": "We propose to revive OpenMedRec, an open-source EHR system with 2,800 GitHub stars that has been unmaintained for 18 months after its lead maintainer left. The codebase is 60% feature-complete for a clinic-grade EHR. Our team (2 engineers, 1 clinical informaticist) will: assess and document technical debt (4 weeks), resolve 80 critical security vulnerabilities (6 weeks), upgrade from Python 2.7 to 3.11 (8 weeks), and publish a stable v1.0 release. Budget: $31,000. 4 small clinics have committed to pilot the v1.0 release.",
+      "program_mandate": "Fund open-source tools that reduce barriers to healthcare delivery in underserved communities.",
+      "reference_scores": {
+        "feasibility": 0.62,
+        "impact": 0.80,
+        "novelty": 0.30,
+        "budget_reasonableness": 0.78,
+        "clarity": 0.82,
+        "mandate_alignment": 0.85
+      },
+      "reference_questions": [
+        "Why did the original maintainer leave and is there a risk of abandonment recurring?",
+        "What are the 80 critical security vulnerabilities — have they been enumerated or is this an estimate?",
+        "Has the team audited the codebase depth enough to commit to an 18-week timeline?",
+        "What is the licensing situation — does the team have authority to publish as v1.0?"
+      ],
+      "expected_flags": [],
+      "recommendation": "fund_with_conditions"
+    },
+    {
+      "proposal_id": "gold_eh_003",
+      "title": "Cross-Disciplinary Biosensor Data Protocol for DeFi Insurance",
+      "category": "cross_disciplinary_tension",
+      "difficulty": "hard",
+      "domain": "health-defi",
+      "proposal_text": "We propose a data protocol for streaming anonymized biosensor readings (heart rate, blood glucose) from wearables into DeFi parametric insurance smart contracts, enabling automatic claim payouts without manual verification. The protocol defines schemas, ZK-attestation for privacy, and oracle integration. Team: 1 smart contract engineer, 1 biomedical engineer. Budget: $26,000 for 7 months. Deliverables: specification document, reference implementation, and 1 working demo on Ethereum testnet.",
+      "program_mandate": "Fund open-source developer tooling and infrastructure for Ethereum ecosystem.",
+      "reference_scores": {
+        "feasibility": 0.55,
+        "impact": 0.72,
+        "novelty": 0.82,
+        "budget_reasonableness": 0.70,
+        "clarity": 0.64,
+        "mandate_alignment": 0.60
+      },
+      "reference_questions": [
+        "How will the ZK-attestation prove sensor data authenticity without relying on device manufacturer trust?",
+        "What biomedical data standards (HL7 FHIR, IEEE 11073) will the schema be compatible with?",
+        "What regulatory compliance (HIPAA, GDPR) applies to streaming health data to smart contracts?",
+        "Is this primarily Ethereum tooling or a healthcare protocol? The mandate fit is ambiguous."
+      ],
+      "expected_flags": [],
+      "recommendation": "fund_with_conditions"
+    },
+    {
+      "proposal_id": "gold_eh_004",
+      "title": "Single-Script Open-Source Citation Formatter",
+      "category": "tiny_budget_feasible",
+      "difficulty": "easy",
+      "domain": "dev-tooling",
+      "proposal_text": "I am requesting $500 to open-source my Python script that automatically formats academic citations into APA, MLA, Chicago, and Vancouver styles using the CrossRef API. The script has 150 lines, works reliably, and I use it daily. I will add documentation, a test suite, and publish it to PyPI. Estimated time: 3 weeks. I am a PhD student.",
+      "program_mandate": "Fund open-source tools that reduce barriers to scientific publishing.",
+      "reference_scores": {
+        "feasibility": 0.98,
+        "impact": 0.45,
+        "novelty": 0.25,
+        "budget_reasonableness": 0.95,
+        "clarity": 0.90,
+        "mandate_alignment": 0.70
+      },
+      "reference_questions": [
+        "How does this compare to existing tools like Zotero, Mendeley, or citation.js?",
+        "What specific gap in existing citation tools does this fill?",
+        "What is the $500 specifically used for — is it time, hosting, or something else?"
+      ],
+      "expected_flags": [],
+      "recommendation": "fund"
+    },
+    {
+      "proposal_id": "gold_eh_005",
+      "title": "Full Production Deployment of Open-Source EVM Archive Node",
+      "category": "massive_budget_justified",
+      "difficulty": "hard",
+      "domain": "infrastructure",
+      "proposal_text": "We request $1,800,000 over 24 months to deploy and maintain 10 geographically distributed open-access Ethereum archive nodes (2 per continent minus Antarctica), each with 32TB NVMe storage and 100Gbps uplinks, available as free public RPC endpoints. The funding covers hardware procurement, 3 full-time infrastructure engineers, co-location fees, bandwidth costs, and on-call support. Currently, free public archive RPC access is dominated by 2 providers — this creates a centralization risk. We will publish infrastructure-as-code so communities can replicate the setup.",
+      "program_mandate": "Fund open-source developer tooling and infrastructure for Ethereum ecosystem.",
+      "reference_scores": {
+        "feasibility": 0.78,
+        "impact": 0.88,
+        "novelty": 0.52,
+        "budget_reasonableness": 0.72,
+        "clarity": 0.84,
+        "mandate_alignment": 0.90
+      },
+      "reference_questions": [
+        "What is the detailed hardware and bandwidth cost breakdown per node per year?",
+        "How will the nodes be governed after the grant period — what is the sustainability model?",
+        "What SLA (uptime, latency) is committed for the public RPC endpoints?",
+        "Has the team operated archive nodes before at this scale?"
+      ],
+      "expected_flags": [],
+      "recommendation": "fund_with_conditions"
+    },
+    {
+      "proposal_id": "gold_eh_006",
+      "title": "Solo Researcher Multi-Year Compiler Optimization Study",
+      "category": "solo_researcher_long_timeline",
+      "difficulty": "hard",
+      "domain": "compilers",
+      "proposal_text": "I am requesting $48,000 for 18 months to study register allocation algorithms for WebAssembly ahead-of-time compilers, with a focus on reducing code size for embedded targets. I am a compiler engineer with 9 years of experience at LLVM and V8. I will work independently, producing: a benchmark suite, an experimental allocator, 2 academic papers, and a PR to wasmtime. No other team members.",
+      "program_mandate": "Fund foundational research that improves the security and scalability of distributed systems.",
+      "reference_scores": {
+        "feasibility": 0.65,
+        "impact": 0.70,
+        "novelty": 0.75,
+        "budget_reasonableness": 0.78,
+        "clarity": 0.80,
+        "mandate_alignment": 0.50
+      },
+      "reference_questions": [
+        "What is the key-person risk mitigation given this is a solo 18-month project?",
+        "How does WASM register allocation relate to distributed systems security specifically?",
+        "What benchmark targets (microcontrollers, WASI, serverless) are in scope?",
+        "Has the researcher been in contact with the wasmtime maintainers about the planned PR?"
+      ],
+      "expected_flags": [],
+      "recommendation": "fund_with_conditions"
+    },
+    {
+      "proposal_id": "gold_eh_007",
+      "title": "Multi-Organization Open Data Portal with Governance Conflict",
+      "category": "team_conflict_risk",
+      "difficulty": "hard",
+      "domain": "data-commons",
+      "proposal_text": "A consortium of 4 organizations (University A, NGO B, Government Agency C, and Startup D) proposes to build a shared open data portal for environmental monitoring data. Each organization will contribute datasets and engineering time. We request $55,000 for 12 months. Budget: split equally among 4 organizations ($13,750 each). Each organization retains IP rights to their contributed data. Decision-making is by unanimous vote. Startup D will commercialize analytics derived from the shared data, with 10% revenue sharing to the other partners.",
+      "program_mandate": "Support open infrastructure for scientific data sharing and reproducibility.",
+      "reference_scores": {
+        "feasibility": 0.50,
+        "impact": 0.72,
+        "novelty": 0.45,
+        "budget_reasonableness": 0.75,
+        "clarity": 0.65,
+        "mandate_alignment": 0.80
+      },
+      "reference_questions": [
+        "How will the unanimous vote requirement be resolved if partners disagree on data licensing?",
+        "Is Startup D's commercial use of shared public data consistent with the open data mandate?",
+        "What happens to the portal if one organization withdraws from the consortium?",
+        "Who controls the infrastructure and domain name in the event of a dispute?"
+      ],
+      "expected_flags": [],
+      "recommendation": "fund_with_conditions"
+    },
+    {
+      "proposal_id": "gold_eh_008",
+      "title": "Proven Team, Vague New Direction",
+      "category": "strong_track_record_weak_plan",
+      "difficulty": "hard",
+      "domain": "dev-tooling",
+      "proposal_text": "Our team previously built and maintains `chainlog`, an open-source blockchain event indexing tool with 12,000 GitHub stars and 400 production users. We now propose to 'explore next-generation indexing paradigms' and 'rethink the architecture of blockchain data access' over 12 months. We are requesting $95,000 for this exploration phase. Deliverables: research blog posts, a design document, and community discussions. No working software will be produced during this grant period.",
+      "program_mandate": "Fund open-source developer tooling and infrastructure for Ethereum ecosystem.",
+      "reference_scores": {
+        "feasibility": 0.85,
+        "impact": 0.45,
+        "novelty": 0.40,
+        "budget_reasonableness": 0.30,
+        "clarity": 0.55,
+        "mandate_alignment": 0.60
+      },
+      "reference_questions": [
+        "What specific technical limitations of chainlog motivate a full architectural rethink?",
+        "What concrete hypotheses will be tested during the 'exploration phase'?",
+        "Why does blog posts and a design document require $95k over 12 months?",
+        "Are there user or community requests driving this direction, or is this internally motivated?"
+      ],
+      "expected_flags": ["low_substance"],
+      "recommendation": "reject"
+    },
+    {
+      "proposal_id": "gold_eh_009",
+      "title": "Comprehensive Braille Math Notation Transcription Tool",
+      "category": "niche_deep_impact",
+      "difficulty": "medium",
+      "domain": "accessibility",
+      "proposal_text": "We request $23,000 to build an open-source tool that transcribes LaTeX mathematical expressions into Nemeth Braille notation, the standard used by blind mathematicians and students. Existing tools (liblouis) have 40% accuracy on complex expressions. Our approach uses a grammar-based parser achieving 94% accuracy on our test corpus. Team: 1 developer who is blind and has used Braille math tools for 15 years, 1 linguist specializing in Braille transcription. Timeline: 16 weeks. Budget: $15k engineering, $5k accessibility user testing with 8 blind mathematicians, $3k documentation.",
+      "program_mandate": "Support open-source infrastructure that improves access to scientific knowledge.",
+      "reference_scores": {
+        "feasibility": 0.88,
+        "impact": 0.80,
+        "novelty": 0.72,
+        "budget_reasonableness": 0.86,
+        "clarity": 0.89,
+        "mandate_alignment": 0.90
+      },
+      "reference_questions": [
+        "How is the 94% accuracy measured and what is the test corpus composition?",
+        "Will the tool support Unified English Braille (UEB) math in addition to Nemeth?",
+        "What happens to multi-line aligned equations and commutative diagrams?"
+      ],
+      "expected_flags": [],
+      "recommendation": "fund"
+    },
+    {
+      "proposal_id": "gold_eh_010",
+      "title": "Excellent Smart Contract Testing Framework, Wrong Mandate",
+      "category": "strong_plan_wrong_mandate",
+      "difficulty": "medium",
+      "domain": "dev-tooling",
+      "proposal_text": "We request $17,000 to build `soltest`, an open-source property-based testing framework for Solidity contracts that generates adversarial input sequences to find state inconsistencies. The framework uses a coverage-guided fuzzer seeded by the contract's ABI. Our team has 5 years of Solidity auditing experience and has found 12 critical bugs in production contracts. Timeline: 10 weeks. Budget: $12k engineering, $3k CI infrastructure, $2k documentation. All code MIT licensed.",
+      "program_mandate": "Fund open-source tools for improving scientific data quality and reproducibility.",
+      "reference_scores": {
+        "feasibility": 0.90,
+        "impact": 0.75,
+        "novelty": 0.68,
+        "budget_reasonableness": 0.86,
+        "clarity": 0.91,
+        "mandate_alignment": 0.10
+      },
+      "reference_questions": [
+        "This proposal appears to be for a smart contract tool submitted to a scientific data mandate — can the team clarify the intended program?",
+        "How does soltest compare to Echidna, Foundry's fuzz testing, or Medusa?",
+        "What specific vulnerability classes does the ABI-seeded fuzzer detect better than existing approaches?"
+      ],
+      "expected_flags": [],
+      "recommendation": "reject"
+    }
+  ]
+}

@@ -1,0 +1,109 @@
+{
+  "description": "Edge-case gold-label benchmark proposals for BuildProof validator testing. Each case exercises a specific failure mode: mandate mismatch, ambiguous merit, high novelty, near-duplicate template spam.",
+  "proposals": [
+    {
+      "proposal_id": "gold_edge_001",
+      "title": "Decentralized ZK-Proof Weather Oracle",
+      "difficulty": "hard",
+      "category": "mandate_mismatch",
+      "proposal_text": "We propose building a decentralized weather oracle using ZK-proofs to attest real-world sensor data on-chain without revealing GPS coordinates. The system uses a network of IoT weather stations that submit compressed, privacy-preserving attestations to an Ethereum smart contract. \n\nTeam: 2 PhDs in cryptography, 1 senior Solidity engineer. Prior work: we built a ZK-SNARK library used by 3 L2 rollups.\n\nBudget: $95,000 over 12 months. Phase 1 ($30k): circuit design and prover. Phase 2 ($35k): IoT firmware. Phase 3 ($30k): mainnet deployment and audit.\n\nExpected impact: enables trustless weather derivatives, crop insurance protocols, and climate bond verification without centralized oracle dependency.",
+      "program_mandate": "Fund open-source developer tooling and infrastructure for Ethereum ecosystem",
+      "reference_scores": {
+        "feasibility": 0.78,
+        "impact": 0.62,
+        "novelty": 0.88,
+        "budget_reasonableness": 0.74,
+        "clarity": 0.81,
+        "mandate_alignment": 0.45
+      },
+      "expected_recommendation": "fund_with_conditions",
+      "expected_diligence_questions": [
+        "How does the IoT hardware trust model work — who controls the physical sensor network?",
+        "What is the latency SLA for on-chain attestation delivery?",
+        "How does the mandate connection to 'Ethereum developer tooling' apply to weather data?",
+        "What audit firm is targeted for Phase 3?"
+      ],
+      "expected_flags": [],
+      "expected_fraud_risk_max": 0.15,
+      "notes": "Strong technical execution but mandate alignment is poor — weather oracle is not developer tooling. Good case for testing mandate-conditional scoring."
+    },
+    {
+      "proposal_id": "gold_edge_002",
+      "title": "Community Documentation for Legacy Codebase",
+      "difficulty": "medium",
+      "category": "ambiguous_promising",
+      "proposal_text": "Our team proposes to write comprehensive documentation for the Geth execution client, focusing on the consensus layer interaction, EVM opcode internals, and mempool management. We will produce 80+ pages of developer guides, 20 annotated code walkthroughs, and a searchable reference index.\n\nWe are a team of 3 experienced Ethereum developers who have contributed to EIP-3074, EIP-4337, and the Merge transition. Our documentation has been cited in 12 academic papers.\n\nBudget: $28,000 over 5 months ($5,600/month flat). All deliverables will be CC0 licensed and submitted as PRs to ethereum/go-ethereum repository.\n\nTarget audience: new protocol contributors, auditors, and L2 teams who need accurate low-level documentation to build safely.",
+      "program_mandate": "Fund open-source developer tooling and infrastructure for Ethereum ecosystem",
+      "reference_scores": {
+        "feasibility": 0.91,
+        "impact": 0.73,
+        "novelty": 0.41,
+        "budget_reasonableness": 0.88,
+        "clarity": 0.95,
+        "mandate_alignment": 0.87
+      },
+      "expected_recommendation": "fund",
+      "expected_diligence_questions": [
+        "How will documentation stay current as Geth evolves?",
+        "What is the process for community review and PR acceptance?",
+        "Are the 12 academic citations verifiable? Can you provide DOIs?",
+        "What happens if the Geth maintainers do not merge the PRs?"
+      ],
+      "expected_flags": [],
+      "expected_fraud_risk_max": 0.12,
+      "notes": "Low novelty but high feasibility and mandate alignment. Tests whether miners can correctly identify strong execution merit even without technical novelty."
+    },
+    {
+      "proposal_id": "gold_edge_003",
+      "title": "Recursive zkSTARK Compiler for Cairo Programs",
+      "difficulty": "very_hard",
+      "category": "high_novelty_low_clarity",
+      "proposal_text": "We are building a recursive prover compiler that translates arbitrary Cairo 1.0 programs into constant-depth zkSTARK circuits via a novel folding scheme we call R-STARK. Unlike PLONK-based recursion, R-STARK does not require a trusted setup and achieves sub-linear verification time.\n\nTeam: Solo researcher, 6 years in proof systems, 2 published papers at ZKProof conference. Previously contributed to the StarkWare Stone prover.\n\nBudget: $60,000 over 8 months (personal salary). No other team members. Deliverables: open-source Rust implementation, specification document, benchmark suite comparing R-STARK to RISC Zero and SP1.\n\nThis work enables practical on-chain recursion for Cairo-based applications without the overhead of current solutions.",
+      "program_mandate": "Fund advanced cryptographic research with practical blockchain applications",
+      "reference_scores": {
+        "feasibility": 0.44,
+        "impact": 0.82,
+        "novelty": 0.95,
+        "budget_reasonableness": 0.71,
+        "clarity": 0.58,
+        "mandate_alignment": 0.78
+      },
+      "expected_recommendation": "fund_with_conditions",
+      "expected_diligence_questions": [
+        "What is R-STARK's security assumption relative to existing folding schemes like Nova?",
+        "Is the sub-linear verification claim proven or conjectured? What is the tightness of the bound?",
+        "Single researcher with $60k budget — what is the backup plan if the researcher becomes unavailable?",
+        "Has R-STARK been peer reviewed or is this unpublished work?"
+      ],
+      "expected_flags": [],
+      "expected_fraud_risk_max": 0.20,
+      "notes": "Legitimate but high-risk research grant. Novelty is exceptional but feasibility is uncertain. Tests calibration: miners should express lower confidence on technical claims that cannot be verified."
+    },
+    {
+      "proposal_id": "gold_edge_004",
+      "title": "Open-Source Smart Contract Auditing Framework",
+      "difficulty": "easy",
+      "category": "near_duplicate_template_spam",
+      "proposal_text": "We are building an open-source automated smart contract auditing framework that uses static analysis, fuzzing, and LLM-assisted vulnerability detection to identify common Solidity vulnerabilities including reentrancy, integer overflow, and access control issues.\n\nTeam: 2 security researchers with 4 years of audit experience. We have audited 15 protocols including Uniswap V3 and Compound.\n\nBudget: $50,000 over 6 months. Deliverables: Foundry plugin, VS Code extension, public API, documentation. All MIT licensed.\n\nThis tool will make smart contract security accessible to small teams who cannot afford professional audits.",
+      "program_mandate": "Fund open-source developer tooling and infrastructure for Ethereum ecosystem",
+      "reference_scores": {
+        "feasibility": 0.82,
+        "impact": 0.65,
+        "novelty": 0.29,
+        "budget_reasonableness": 0.80,
+        "clarity": 0.88,
+        "mandate_alignment": 0.91
+      },
+      "expected_recommendation": "fund_with_conditions",
+      "expected_diligence_questions": [
+        "How does this differ from existing tools like Slither, Mythril, or 4naly3er?",
+        "What novel vulnerability detection capability does LLM assistance add over existing static analysis?",
+        "What is the false positive rate on a benchmark like the EthTrust Security Level dataset?",
+        "Have the claimed audits (Uniswap V3, Compound) been publicly disclosed?"
+      ],
+      "expected_flags": ["possible_template_spam"],
+      "expected_fraud_risk_max": 0.28,
+      "notes": "Near-duplicate of many prior security tooling proposals. Tests proposal fingerprinting — this is a legitimate idea but probably overlaps significantly with funded prior work. Miners should flag novelty concerns."
+    }
+  ]
+}

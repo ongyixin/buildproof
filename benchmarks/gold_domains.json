@@ -1,0 +1,489 @@
+[
+  {
+    "proposal_id": "gold_d_001",
+    "title": "Open-Source Carbon Flux Monitoring Pipeline",
+    "category": "strong",
+    "difficulty": "medium",
+    "domain": "climate",
+    "proposal_text": "We request $19,500 to build an open-source pipeline for processing eddy covariance carbon flux data from FLUXNET tower networks. The pipeline will automate gap-filling, quality control, and uncertainty quantification — tasks currently requiring expensive proprietary software (EddyPro, REddyProc). Our team of 2 atmospheric scientists has already built a working prototype processing 3 tower-years of data. We will extend it to support 50+ towers, add a web-based dashboard, and release under Apache 2.0. Timeline: 16 weeks. Budget: $12k engineering, $4k cloud compute for CI, $3.5k documentation and user workshops.",
+    "program_mandate": "Support open-source tools that accelerate climate science research.",
+    "reference_scores": {
+      "feasibility": 0.88,
+      "impact": 0.80,
+      "novelty": 0.65,
+      "budget_reasonableness": 0.85,
+      "clarity": 0.87,
+      "mandate_alignment": 0.95
+    },
+    "reference_questions": [
+      "How does the gap-filling algorithm compare to standard MDS and ANN approaches?",
+      "Which FLUXNET data format versions (AmeriFlux, ICOS) will be supported at launch?",
+      "What is the maintenance plan for keeping the pipeline aligned with FLUXNET data format updates?"
+    ],
+    "expected_flags": [],
+    "recommendation": "fund"
+  },
+  {
+    "proposal_id": "gold_d_002",
+    "title": "AI-Powered Climate Action Platform",
+    "category": "weak",
+    "difficulty": "easy",
+    "domain": "climate",
+    "proposal_text": "Our revolutionary platform will harness artificial intelligence to empower communities to fight climate change. We will create an app that uses real-time data to tell people how to reduce their carbon footprint. The platform will gamify sustainability and leverage blockchain for carbon credit verification. We need $120,000 to build this over 6 months. With millions of users, we can save the planet.",
+    "program_mandate": "Support open-source tools that accelerate climate science research.",
+    "reference_scores": {
+      "feasibility": 0.25,
+      "impact": 0.30,
+      "novelty": 0.20,
+      "budget_reasonableness": 0.10,
+      "clarity": 0.18,
+      "mandate_alignment": 0.15
+    },
+    "reference_questions": [
+      "What specific AI/ML technique will be used and on what data?",
+      "What is the detailed $120k budget breakdown?",
+      "How does this relate to climate science research as opposed to consumer behavior?",
+      "Who is the team and what are their qualifications?"
+    ],
+    "expected_flags": ["low_substance", "jargon_overload"],
+    "recommendation": "reject"
+  },
+  {
+    "proposal_id": "gold_d_003",
+    "title": "Open Clinical Trial Protocol Editor",
+    "category": "strong",
+    "difficulty": "medium",
+    "domain": "health",
+    "proposal_text": "We request $16,000 to develop an open-source web editor for clinical trial protocols that enforces CONSORT and SPIRIT reporting standards, flags incomplete randomization descriptions, and generates machine-readable protocol summaries for registry submission. The lead developer (8 years clinical informatics) has shipped 3 open-source medical tools with 2k+ GitHub stars each. Phase 1 (10 weeks): core editor with CONSORT checklist; Phase 2 (4 weeks): auto-generated summary export. Budget: $11k engineering, $3k UX testing with 5 trial coordinators, $2k documentation.",
+    "program_mandate": "Fund open-source tools that reduce barriers to scientific publishing and clinical research.",
+    "reference_scores": {
+      "feasibility": 0.90,
+      "impact": 0.82,
+      "novelty": 0.62,
+      "budget_reasonableness": 0.88,
+      "clarity": 0.91,
+      "mandate_alignment": 0.87
+    },
+    "reference_questions": [
+      "Will the editor support SPIRIT 2013 extensions for adaptive trials?",
+      "How will you handle version control and collaborative editing of protocols?",
+      "What is the plan for long-term maintenance after the grant period?"
+    ],
+    "expected_flags": [],
+    "recommendation": "fund"
+  },
+  {
+    "proposal_id": "gold_d_004",
+    "title": "AI Diagnostics Decision Support for Low-Resource Clinics",
+    "category": "high_impact_underdeveloped",
+    "difficulty": "hard",
+    "domain": "health",
+    "proposal_text": "We propose an offline-capable AI decision support tool for primary care clinics in sub-Saharan Africa, triaging patients by likelihood of TB, malaria, or sepsis based on symptom input and basic vital signs. The tool would run on $50 Android tablets without internet. We have 2 physicians and 1 ML engineer on the team. We request $25,000 for 6 months. No prototype exists. Deliverables: initial model, clinical validation protocol, pilot in 2 clinics.",
+    "program_mandate": "Fund open-source tools that improve clinical information access in low-resource settings.",
+    "reference_scores": {
+      "feasibility": 0.48,
+      "impact": 0.92,
+      "novelty": 0.78,
+      "budget_reasonableness": 0.60,
+      "clarity": 0.52,
+      "mandate_alignment": 0.90
+    },
+    "reference_questions": [
+      "What training dataset will be used and what is its geographic distribution?",
+      "How will the model be validated against clinical ground truth before deployment?",
+      "What is the plan for regulatory clearance or ethics board approval?",
+      "How will the 2-clinic pilot be selected and what are the safety protocols?"
+    ],
+    "expected_flags": [],
+    "recommendation": "fund_with_conditions"
+  },
+  {
+    "proposal_id": "gold_d_005",
+    "title": "Modular Open Curriculum Builder for Community Colleges",
+    "category": "strong",
+    "difficulty": "easy",
+    "domain": "education",
+    "proposal_text": "Requesting $11,000 to extend our existing open-source curriculum authoring tool (1,200 GitHub stars, used by 38 community colleges) with: LTI 1.3 integration for Canvas/Moodle, screen reader compliance (WCAG 2.1 AA), and export to H5P and SCORM 2004 formats. Timeline: 12 weeks. Budget: $7.5k engineering, $2k accessibility audit, $1.5k documentation. We have one senior developer with 6 years ed-tech experience. All code MIT licensed.",
+    "program_mandate": "Improve open-source educational infrastructure for nonprofit institutions.",
+    "reference_scores": {
+      "feasibility": 0.93,
+      "impact": 0.74,
+      "novelty": 0.38,
+      "budget_reasonableness": 0.90,
+      "clarity": 0.92,
+      "mandate_alignment": 0.88
+    },
+    "reference_questions": [
+      "What LMS versions will be tested for LTI 1.3 compatibility?",
+      "Will the WCAG audit cover dynamic content rendered by the authoring tool?"
+    ],
+    "expected_flags": [],
+    "recommendation": "fund"
+  },
+  {
+    "proposal_id": "gold_d_006",
+    "title": "Blockchain-Verified Learning Credential Platform",
+    "category": "weak",
+    "difficulty": "easy",
+    "domain": "education",
+    "proposal_text": "Education is broken. Our platform will use blockchain to verify learning credentials and create a decentralized marketplace for skills. Students will own their data. Teachers will be paid fairly with tokens. Employers will instantly verify skills. We need $200,000 to build this world-changing platform in 6 months. We have a team of visionaries ready to disrupt the education system.",
+    "program_mandate": "Improve open-source educational infrastructure for nonprofit institutions.",
+    "reference_scores": {
+      "feasibility": 0.10,
+      "impact": 0.25,
+      "novelty": 0.20,
+      "budget_reasonableness": 0.05,
+      "clarity": 0.12,
+      "mandate_alignment": 0.10
+    },
+    "reference_questions": [
+      "What specific blockchain and credential standard will be used (Verifiable Credentials, ERC-1155)?",
+      "Who are the 'team of visionaries' and what are their technical backgrounds?",
+      "How does this differ from IMS Global CLR or Badgr?",
+      "What is the detailed $200k budget breakdown?"
+    ],
+    "expected_flags": ["low_substance", "jargon_overload", "budget_inflation"],
+    "recommendation": "reject"
+  },
+  {
+    "proposal_id": "gold_d_007",
+    "title": "Open-Source Liquidation Bot Framework for DeFi Protocols",
+    "category": "strong",
+    "difficulty": "medium",
+    "domain": "defi",
+    "proposal_text": "We request $14,000 to build and open-source a modular liquidation bot framework supporting Aave V3, Compound V3, and Euler. The framework abstracts protocol-specific liquidation mechanics into a plugin system, enabling community maintainers to add new protocols without forking. Our team of 2 DeFi engineers has run liquidation bots since 2021 and has collected >$200k in liquidation profits. We will open-source the core framework under MIT, including backtesting harness against historical on-chain data. Timeline: 10 weeks. Budget: $9k engineering, $3k infrastructure for backtesting, $2k documentation.",
+    "program_mandate": "Fund open-source developer tooling and infrastructure for Ethereum ecosystem.",
+    "reference_scores": {
+      "feasibility": 0.87,
+      "impact": 0.70,
+      "novelty": 0.58,
+      "budget_reasonableness": 0.82,
+      "clarity": 0.86,
+      "mandate_alignment": 0.88
+    },
+    "reference_questions": [
+      "How will the framework handle MEV competition and frontrunning protection?",
+      "What is the performance overhead of the plugin abstraction layer vs. direct protocol calls?",
+      "Will the backtesting harness include realistic gas price modeling?"
+    ],
+    "expected_flags": [],
+    "recommendation": "fund"
+  },
+  {
+    "proposal_id": "gold_d_008",
+    "title": "Formal AMM Invariant Verifier",
+    "category": "edge_case",
+    "difficulty": "hard",
+    "domain": "defi",
+    "proposal_text": "We propose building a formal verification library for AMM invariant properties using the K Framework. The library will provide mechanized proofs that common AMM designs (constant product, StableSwap, concentrated liquidity) maintain their stated invariants under all execution sequences, including flash loan attacks. One researcher, 4 years in formal verification. No prior AMM work, but 3 published proofs of ERC-20 correctness. Budget: $30,000 for 9 months. Deliverables: K specifications for 3 AMM types, proof scripts, and a tutorial.",
+    "program_mandate": "Fund open-source developer tooling and infrastructure for Ethereum ecosystem.",
+    "reference_scores": {
+      "feasibility": 0.50,
+      "impact": 0.85,
+      "novelty": 0.88,
+      "budget_reasonableness": 0.72,
+      "clarity": 0.68,
+      "mandate_alignment": 0.80
+    },
+    "reference_questions": [
+      "Does the K Framework have adequate EVM semantics to model the full execution context?",
+      "What is the scope of the flash loan model — does it cover multi-hop paths?",
+      "Has the researcher collaborated with AMM protocol teams to validate the invariant specifications?",
+      "Is a 9-month timeline realistic for proofs of concentrated liquidity?"
+    ],
+    "expected_flags": [],
+    "recommendation": "fund_with_conditions"
+  },
+  {
+    "proposal_id": "gold_d_009",
+    "title": "GPU Profiling CLI for Machine Learning Pipelines",
+    "category": "strong",
+    "difficulty": "easy",
+    "domain": "dev-tooling",
+    "proposal_text": "Requesting $9,500 to build a CLI tool (`gputrace`) that traces GPU memory and compute utilization per layer for PyTorch and JAX models, producing flame-graph-style visualizations and bottleneck reports. Unlike NVIDIA NSight, gputrace is CLI-first, CI-friendly, and zero-config. The lead developer has 5 years PyTorch internals experience and has prototyped the core tracing hooks. Timeline: 8 weeks. Budget: $7k engineering, $1.5k testing on A100/H100 hardware, $1k documentation.",
+    "program_mandate": "Fund open-source developer tools that improve machine learning research productivity.",
+    "reference_scores": {
+      "feasibility": 0.91,
+      "impact": 0.76,
+      "novelty": 0.68,
+      "budget_reasonableness": 0.90,
+      "clarity": 0.92,
+      "mandate_alignment": 0.89
+    },
+    "reference_questions": [
+      "Will CUDA and ROCm backends both be supported?",
+      "How will gputrace handle distributed training across multiple GPUs?"
+    ],
+    "expected_flags": [],
+    "recommendation": "fund"
+  },
+  {
+    "proposal_id": "gold_d_010",
+    "title": "Simple Python Linter for Data Science Notebooks",
+    "category": "budget_inflated",
+    "difficulty": "medium",
+    "domain": "dev-tooling",
+    "proposal_text": "We will build a Python linter specifically for Jupyter notebooks that checks for common data science anti-patterns: cell execution order issues, undeclared variable references across cells, and magic command overuse. The tool will integrate with nbQA and pre-commit. We request $75,000 for 4 months. Budget: $50k for 2 senior engineers, $15k for user research, $10k for marketing and launch.",
+    "program_mandate": "Fund open-source developer tools that improve machine learning research productivity.",
+    "reference_scores": {
+      "feasibility": 0.85,
+      "impact": 0.60,
+      "novelty": 0.45,
+      "budget_reasonableness": 0.20,
+      "clarity": 0.78,
+      "mandate_alignment": 0.75
+    },
+    "reference_questions": [
+      "Why are 2 senior engineers needed for a notebook linter when tools like nbQA already exist?",
+      "What specific anti-patterns are not covered by existing tools (flake8-nb, nbQA+pylint)?",
+      "What does the $10k marketing budget produce for an open-source developer tool?"
+    ],
+    "expected_flags": ["budget_inflation"],
+    "recommendation": "fund_with_conditions"
+  },
+  {
+    "proposal_id": "gold_d_011",
+    "title": "On-Chain Governance Proposal Explorer and Analytics",
+    "category": "strong",
+    "difficulty": "medium",
+    "domain": "governance",
+    "proposal_text": "We request $17,500 to build an open-source governance analytics platform that indexes and visualizes on-chain proposals across Compound, Uniswap, Aave, and ENS governance contracts. The platform will show vote participation trends, whale concentration metrics, and delegate influence graphs. Our team (2 engineers, 1 data scientist) has previously built the open-source Snapshot analytics dashboard used by 80+ DAOs. Timeline: 12 weeks. Budget: $12k engineering, $3k indexer infrastructure, $2.5k frontend.",
+    "program_mandate": "Fund transparency and accountability tooling for on-chain governance.",
+    "reference_scores": {
+      "feasibility": 0.84,
+      "impact": 0.75,
+      "novelty": 0.55,
+      "budget_reasonableness": 0.82,
+      "clarity": 0.86,
+      "mandate_alignment": 0.92
+    },
+    "reference_questions": [
+      "How will the indexer handle historical re-orgs and proposal state changes?",
+      "Will the delegate influence graph handle transitive delegation?",
+      "What is the update frequency for on-chain data?"
+    ],
+    "expected_flags": [],
+    "recommendation": "fund"
+  },
+  {
+    "proposal_id": "gold_d_012",
+    "title": "DAO Management Suite for Web3 Organizations",
+    "category": "weak",
+    "difficulty": "easy",
+    "domain": "governance",
+    "proposal_text": "We will build the ultimate DAO management suite. Our all-in-one platform will handle treasury, voting, contributor payments, and community engagement. We will make DAOs easy for everyone. The platform will support 100+ chains. We need $300,000 to build this. We have a passionate team of 8 people who believe in decentralization.",
+    "program_mandate": "Fund transparency and accountability tooling for on-chain governance.",
+    "reference_scores": {
+      "feasibility": 0.10,
+      "impact": 0.20,
+      "novelty": 0.15,
+      "budget_reasonableness": 0.05,
+      "clarity": 0.10,
+      "mandate_alignment": 0.20
+    },
+    "reference_questions": [
+      "What specific features are being built and which existing tools (Tally, Boardroom, Llama) does this replace?",
+      "How is $300k scoped across 8 people?",
+      "What does '100+ chain support' mean technically?",
+      "What specific transparency problem does this solve?"
+    ],
+    "expected_flags": ["low_substance", "budget_inflation"],
+    "recommendation": "reject"
+  },
+  {
+    "proposal_id": "gold_d_013",
+    "title": "Public Dataset Versioning and Provenance Tracker",
+    "category": "strong",
+    "difficulty": "medium",
+    "domain": "data-commons",
+    "proposal_text": "Requesting $21,000 to build an open-source dataset versioning system (like Git but for tabular data) that stores provenance metadata, schema evolution history, and transformation lineage for public datasets hosted on Zenodo and OSF. The system will generate DOI-linked provenance graphs and flag when downstream citations use outdated dataset versions. Team: 2 research software engineers with prior contributions to DVC and Frictionless Data. Timeline: 14 weeks. Budget: $14k engineering, $4k server infrastructure, $3k user research with 10 dataset maintainers.",
+    "program_mandate": "Support open infrastructure for scientific data sharing and reproducibility.",
+    "reference_scores": {
+      "feasibility": 0.83,
+      "impact": 0.80,
+      "novelty": 0.72,
+      "budget_reasonableness": 0.84,
+      "clarity": 0.87,
+      "mandate_alignment": 0.93
+    },
+    "reference_questions": [
+      "How will the system handle large datasets (>100GB) where full history would be prohibitively large?",
+      "Will the provenance graph integrate with existing tools like RO-Crate or PROV-O?",
+      "What is the conflict resolution strategy when multiple forks of a dataset exist?"
+    ],
+    "expected_flags": [],
+    "recommendation": "fund"
+  },
+  {
+    "proposal_id": "gold_d_014",
+    "title": "Federated Learning Aggregator for Biomedical Data Consortia",
+    "category": "high_impact_underdeveloped",
+    "difficulty": "hard",
+    "domain": "data-commons",
+    "proposal_text": "We propose a federated learning aggregation server that enables hospital consortia to train shared models on patient data without data leaving institutional boundaries. The system will implement differential privacy (epsilon-DP) and support common EHR formats (FHIR R4). Team: 1 ML researcher, 1 FHIR specialist. No prototype. Requesting $35,000 for 8 months. The system would run as a coordinator node; institutions run local training workers.",
+    "program_mandate": "Support open infrastructure for scientific data sharing and reproducibility.",
+    "reference_scores": {
+      "feasibility": 0.46,
+      "impact": 0.88,
+      "novelty": 0.70,
+      "budget_reasonableness": 0.62,
+      "clarity": 0.55,
+      "mandate_alignment": 0.78
+    },
+    "reference_questions": [
+      "What DP epsilon values are targeted and what is the utility-privacy tradeoff analysis?",
+      "Have any hospital IRBs been consulted about using a federated system for PHI?",
+      "How will the system handle heterogeneous data quality across institutions?",
+      "What is the threat model for the aggregation server — is it considered trusted or semi-honest?"
+    ],
+    "expected_flags": [],
+    "recommendation": "fund_with_conditions"
+  },
+  {
+    "proposal_id": "gold_d_015",
+    "title": "Differential Privacy Library for Python Data Science",
+    "category": "strong",
+    "difficulty": "medium",
+    "domain": "privacy",
+    "proposal_text": "We request $18,000 to build `privkit`, an open-source Python library implementing local and central differential privacy mechanisms (Laplace, Gaussian, RAPPOR, randomized response) with a clean API compatible with pandas and numpy. Unlike Google's DP library (Java/Go) or IBM's Diffprivlib (limited), privkit targets Python-native workflows with automatic sensitivity analysis. Team: 2 researchers (one PhD in DP from CMU). Working prototype covers Laplace and Gaussian mechanisms. Timeline: 12 weeks. Budget: $12k engineering, $3k testing and validation against known DP benchmarks, $3k documentation.",
+    "program_mandate": "Fund open-source tools for privacy-preserving data analysis.",
+    "reference_scores": {
+      "feasibility": 0.86,
+      "impact": 0.78,
+      "novelty": 0.65,
+      "budget_reasonableness": 0.84,
+      "clarity": 0.88,
+      "mandate_alignment": 0.92
+    },
+    "reference_questions": [
+      "How will the automatic sensitivity analysis handle user-defined aggregation functions?",
+      "What is the plan for auditing DP guarantees — will you publish a formal proof or rely on empirical testing?",
+      "How does RAPPOR support differ from Apple's Swift implementation?"
+    ],
+    "expected_flags": [],
+    "recommendation": "fund"
+  },
+  {
+    "proposal_id": "gold_d_016",
+    "title": "Private Data Sharing App",
+    "category": "weak",
+    "difficulty": "easy",
+    "domain": "privacy",
+    "proposal_text": "Privacy is a human right. Our app will let people share data privately and securely. We use advanced encryption and zero-knowledge proofs to ensure that nobody can see your data. The app will be completely private and open source. We need $90,000 to build this important tool that will protect millions of users.",
+    "program_mandate": "Fund open-source tools for privacy-preserving data analysis.",
+    "reference_scores": {
+      "feasibility": 0.15,
+      "impact": 0.20,
+      "novelty": 0.10,
+      "budget_reasonableness": 0.10,
+      "clarity": 0.08,
+      "mandate_alignment": 0.20
+    },
+    "reference_questions": [
+      "What type of data sharing is this designed for — files, databases, structured records?",
+      "What specific ZK proof scheme will be implemented?",
+      "Who is the target user and what is their threat model?",
+      "What distinguishes this from Signal, Keybase, or IPFS with encryption?"
+    ],
+    "expected_flags": ["low_substance", "budget_inflation"],
+    "recommendation": "reject"
+  },
+  {
+    "proposal_id": "gold_d_017",
+    "title": "Satellite Deforestation Alert System for Indigenous Land Monitors",
+    "category": "strong",
+    "difficulty": "hard",
+    "domain": "climate",
+    "proposal_text": "We request $28,000 to build an open-source pipeline that processes Sentinel-2 and Planet imagery to detect deforestation events in near-real-time (48-hour latency), sending SMS/WhatsApp alerts to indigenous land monitors in the Amazon basin. Our team (2 remote sensing engineers, 1 NGO liaison) has deployed a similar system for one territory in 2022 — it detected 3 illegal logging events that led to enforcement actions. Expanding to 12 territories. Timeline: 20 weeks. Budget: $16k engineering, $7k satellite imagery API costs, $5k SMS infrastructure and field training.",
+    "program_mandate": "Fund open-source tools that support environmental monitoring and indigenous land rights.",
+    "reference_scores": {
+      "feasibility": 0.79,
+      "impact": 0.88,
+      "novelty": 0.62,
+      "budget_reasonableness": 0.83,
+      "clarity": 0.85,
+      "mandate_alignment": 0.95
+    },
+    "reference_questions": [
+      "How will cloud cover be handled in the Amazon's rainy season?",
+      "What is the false positive rate from the 2022 deployment?",
+      "How will land monitors be trained to act on alerts?",
+      "What happens to the system after the grant period ends?"
+    ],
+    "expected_flags": [],
+    "recommendation": "fund"
+  },
+  {
+    "proposal_id": "gold_d_018",
+    "title": "Medical Ontology Alignment Tool for EHR Interoperability",
+    "category": "strong",
+    "difficulty": "medium",
+    "domain": "health",
+    "proposal_text": "Requesting $24,000 to build an open-source semi-automated tool for aligning clinical codes across SNOMED CT, ICD-10-CM, and LOINC when migrating legacy EHR systems. The tool will use embedding similarity and rule-based heuristics to propose code mappings with confidence scores, requiring human review only for low-confidence matches. Team: 1 clinical informaticist, 1 NLP engineer. Prior work: mapping tool used by 2 hospital systems. Timeline: 14 weeks. Budget: $16k engineering, $5k clinical expert review time, $3k documentation.",
+    "program_mandate": "Fund open-source tools that reduce barriers to scientific publishing and clinical research.",
+    "reference_scores": {
+      "feasibility": 0.84,
+      "impact": 0.76,
+      "novelty": 0.60,
+      "budget_reasonableness": 0.82,
+      "clarity": 0.88,
+      "mandate_alignment": 0.80
+    },
+    "reference_questions": [
+      "What embedding model will be used and how will it handle medical abbreviations?",
+      "How will the tool handle many-to-one code mappings (multiple ICD-10 codes to one SNOMED concept)?",
+      "Will the confidence scores be calibrated against gold standard mapping sets?"
+    ],
+    "expected_flags": [],
+    "recommendation": "fund"
+  },
+  {
+    "proposal_id": "gold_d_019",
+    "title": "Low-Bandwidth Video Course Delivery for Rural Education",
+    "category": "high_impact_underdeveloped",
+    "difficulty": "hard",
+    "domain": "education",
+    "proposal_text": "We want to build a system to deliver video courses over 2G connections (50 kbps) in rural Kenya and India, using adaptive transcoding and progressive download caching. The system would integrate with existing open-source LMS platforms. Our team includes 1 software engineer and 2 education NGO partners. We request $22,000 for 6 months. Deliverables: transcoding pipeline, Android app, pilot with 3 schools.",
+    "program_mandate": "Improve open-source educational infrastructure for nonprofit institutions.",
+    "reference_scores": {
+      "feasibility": 0.55,
+      "impact": 0.87,
+      "novelty": 0.65,
+      "budget_reasonableness": 0.68,
+      "clarity": 0.58,
+      "mandate_alignment": 0.85
+    },
+    "reference_questions": [
+      "What existing tools (Kolibri, YouTube offline, TED offline) have been evaluated and why are they insufficient?",
+      "What is the target video quality and file size per minute of content?",
+      "How will the transcoding pipeline be deployed — server-side or client-side?",
+      "What specific LMS integrations (Moodle, Canvas, Open edX) are prioritized?"
+    ],
+    "expected_flags": [],
+    "recommendation": "fund_with_conditions"
+  },
+  {
+    "proposal_id": "gold_d_020",
+    "title": "Lightweight Formal Verification Harness for Rust Crates",
+    "category": "strong",
+    "difficulty": "medium",
+    "domain": "dev-tooling",
+    "proposal_text": "We request $20,000 to build a formal verification harness generator for Rust crates that automatically scaffolds Kani or CBMC verification harnesses from annotated function signatures. The tool reduces verification setup from days to hours for typical crates. Team: 2 engineers with prior contributions to the Rust-CBMC project. Working prototype handles simple integer functions. Timeline: 14 weeks, expanding to handle trait objects and closures. Budget: $13k engineering, $4k testing against a corpus of 20 popular crates, $3k documentation.",
+    "program_mandate": "Fund open-source developer tools for software security and correctness.",
+    "reference_scores": {
+      "feasibility": 0.82,
+      "impact": 0.75,
+      "novelty": 0.70,
+      "budget_reasonableness": 0.84,
+      "clarity": 0.86,
+      "mandate_alignment": 0.88
+    },
+    "reference_questions": [
+      "How will the harness generator handle unsafe Rust code?",
+      "What coverage guarantees does the scaffolding provide for complex trait bounds?",
+      "How does this compare to cargo-kani's existing proof scaffolding?"
+    ],
+    "expected_flags": [],
+    "recommendation": "fund"
+  }
+]

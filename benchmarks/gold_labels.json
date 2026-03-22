@@ -1,0 +1,182 @@
+[
+  {
+    "proposal_id": "gold_001",
+    "category": "strong",
+    "difficulty": "easy",
+    "proposal_text": "We are requesting $12,000 to build an open-source accessibility plugin that converts scientific PDFs into screen-reader-friendly HTML with semantic structure preservation. The lead developer has 7 years of open-source experience and has already prototyped the core parser. We will deliver an MVP in 6 weeks, run a 20-user pilot study, and publish full results. Budget breakdown: $7k development, $2k hosting & CI, $3k user research stipends.",
+    "program_mandate": "Support open-source infrastructure that improves access to scientific knowledge.",
+    "reference_scores": {
+      "feasibility": 0.85,
+      "impact": 0.82,
+      "novelty": 0.60,
+      "budget_reasonableness": 0.78,
+      "clarity": 0.88,
+      "mandate_alignment": 0.92
+    },
+    "reference_questions": [
+      "What prior evidence supports user demand for screen-reader PDF tools?",
+      "Can the applicant show maintenance capacity after grant completion?",
+      "What is the long-term hosting plan after the grant period?"
+    ],
+    "expected_flags": [],
+    "recommendation": "fund"
+  },
+  {
+    "proposal_id": "gold_002",
+    "category": "weak",
+    "difficulty": "easy",
+    "proposal_text": "Our project will revolutionize the blockchain space by creating a decentralized AI platform that uses quantum computing to verify scientific papers. We need $500,000 to hire a team of 10 engineers and launch in 3 months. The market opportunity is $50 billion.",
+    "program_mandate": "Support open-source infrastructure that improves access to scientific knowledge.",
+    "reference_scores": {
+      "feasibility": 0.12,
+      "impact": 0.30,
+      "novelty": 0.25,
+      "budget_reasonableness": 0.08,
+      "clarity": 0.20,
+      "mandate_alignment": 0.15
+    },
+    "reference_questions": [
+      "What specific quantum computing capability is required and who has it?",
+      "How does the budget break down across 10 engineers for 3 months?",
+      "What concrete deliverables will be produced?",
+      "How does this align with open-source infrastructure?"
+    ],
+    "expected_flags": ["jargon_overload", "budget_inflation"],
+    "recommendation": "reject"
+  },
+  {
+    "proposal_id": "gold_003",
+    "category": "budget_inflated",
+    "difficulty": "medium",
+    "proposal_text": "We propose building a CLI tool to automate dependency vulnerability scanning for Python projects, integrated with GitHub Actions. The tool is 70% complete as an internal prototype. We are requesting $85,000 for a 3-month sprint. Budget: $60k salaries, $15k legal review, $10k marketing.",
+    "program_mandate": "Fund security tooling for open-source software supply chains.",
+    "reference_scores": {
+      "feasibility": 0.80,
+      "impact": 0.72,
+      "novelty": 0.50,
+      "budget_reasonableness": 0.25,
+      "clarity": 0.75,
+      "mandate_alignment": 0.85
+    },
+    "reference_questions": [
+      "Why is $60k needed for 3 months of engineering on a 70% complete tool?",
+      "What specific legal review is needed for an open-source CLI tool?",
+      "What existing tools (Snyk, Dependabot) does this differentiate from?"
+    ],
+    "expected_flags": ["budget_inflation"],
+    "recommendation": "fund_with_conditions"
+  },
+  {
+    "proposal_id": "gold_004",
+    "category": "high_impact_underdeveloped",
+    "difficulty": "hard",
+    "proposal_text": "We want to create an AI-powered peer review assistant for small journals that cannot afford professional peer reviewers. This would democratize publishing for researchers in low-income countries. Requesting $18,000 for 4 months.",
+    "program_mandate": "Support tools that reduce barriers to scientific publishing.",
+    "reference_scores": {
+      "feasibility": 0.55,
+      "impact": 0.90,
+      "novelty": 0.80,
+      "budget_reasonableness": 0.65,
+      "clarity": 0.50,
+      "mandate_alignment": 0.88
+    },
+    "reference_questions": [
+      "What specific AI architecture or model will be used?",
+      "How will review quality be validated?",
+      "What journals have been contacted as potential pilot partners?",
+      "What is the team's technical background in NLP?",
+      "How will bias in AI reviews be mitigated?"
+    ],
+    "expected_flags": [],
+    "recommendation": "fund_with_conditions"
+  },
+  {
+    "proposal_id": "gold_005",
+    "category": "strong",
+    "difficulty": "easy",
+    "proposal_text": "Request for $8,500 to add multilingual support (Spanish, French, Arabic) to our existing open-source grant management tool used by 43 nonprofits. We have native speaker volunteers for translation review. Timeline: 10 weeks. Budget: $6k dev time, $1.5k QA, $1k documentation.",
+    "program_mandate": "Improve coordination tooling for nonprofit and civic organizations.",
+    "reference_scores": {
+      "feasibility": 0.92,
+      "impact": 0.75,
+      "novelty": 0.40,
+      "budget_reasonableness": 0.88,
+      "clarity": 0.90,
+      "mandate_alignment": 0.85
+    },
+    "reference_questions": [
+      "Which framework will handle i18n (react-intl, i18next)?",
+      "How will RTL layout for Arabic be tested?"
+    ],
+    "expected_flags": [],
+    "recommendation": "fund"
+  },
+  {
+    "proposal_id": "gold_006",
+    "category": "edge_case",
+    "difficulty": "hard",
+    "proposal_text": "We are a PhD student investigating formal verification of smart contract bridges. The work is highly theoretical but could prevent exploits like the $600M Ronin hack. We request $15,000 for 6 months of research time. No prototype exists yet but the mathematical framework is novel. We have published 2 papers in related areas. Deliverables: formal proofs, reference implementation, and a survey paper.",
+    "program_mandate": "Fund research and tooling that improves blockchain security.",
+    "reference_scores": {
+      "feasibility": 0.45,
+      "impact": 0.88,
+      "novelty": 0.92,
+      "budget_reasonableness": 0.70,
+      "clarity": 0.65,
+      "mandate_alignment": 0.90
+    },
+    "reference_questions": [
+      "Which specific bridge architectures will be formalized?",
+      "What proof assistant (Coq, Lean, Isabelle) will be used?",
+      "How will the reference implementation be tested against real exploits?",
+      "Is the 6-month timeline realistic for formal proofs?"
+    ],
+    "expected_flags": [],
+    "recommendation": "fund_with_conditions"
+  },
+  {
+    "proposal_id": "gold_007",
+    "category": "strong",
+    "difficulty": "medium",
+    "proposal_text": "Requesting $22,000 to build an open-source data pipeline toolkit for small climate research groups. The toolkit will provide standardized ingestion, cleaning, and visualization of weather station data from NOAA and Copernicus datasets. Our team of 3 engineers has already built similar tooling for oceanography. Timeline: 14 weeks. Budget: $15k engineering, $4k cloud infrastructure for testing, $3k documentation and workshops.",
+    "program_mandate": "Support open-source tools that accelerate climate science research.",
+    "reference_scores": {
+      "feasibility": 0.82,
+      "impact": 0.78,
+      "novelty": 0.55,
+      "budget_reasonableness": 0.80,
+      "clarity": 0.85,
+      "mandate_alignment": 0.93
+    },
+    "reference_questions": [
+      "How does this differ from existing tools like Pangeo or xarray?",
+      "What specific data quality challenges will the cleaning pipeline address?"
+    ],
+    "expected_flags": [],
+    "recommendation": "fund"
+  },
+  {
+    "proposal_id": "gold_008",
+    "category": "weak",
+    "difficulty": "medium",
+    "proposal_text": "We want to build an app. It will help people. We need funding to get started. The app will use AI and blockchain to make things better. We think many people will use it. Budget: $50,000.",
+    "program_mandate": "Fund practical open-source tools for scientific collaboration.",
+    "reference_scores": {
+      "feasibility": 0.10,
+      "impact": 0.15,
+      "novelty": 0.10,
+      "budget_reasonableness": 0.05,
+      "clarity": 0.08,
+      "mandate_alignment": 0.05
+    },
+    "reference_questions": [
+      "What specifically does the app do?",
+      "Who is the target user?",
+      "What is the detailed budget breakdown?",
+      "What is the team's background?",
+      "How does this relate to scientific collaboration?"
+    ],
+    "expected_flags": ["low_substance"],
+    "recommendation": "reject"
+  }
+]
